@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link type="text/css" rel="stylesheet" href="./css/index.css" />
+
+<body>
+    <!-- 多类名 -->
+    <div class="header center">
+        <img src="./imgs/logo.png" alt="">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">课程</a></li>
+            <li><a href="">职业规划</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" value="输入关键词">
+            <button></button>
+        </div>
+        <div class="user">
+            <img src="./imgs/user.png" alt="" style="vertical-align: middle;">
+            jie
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="center">
+            <div class="subnav">
+                <ul>
+                    <li><a href="">前端开发<span> &gt; </span></a></li>
+                    <li><a href="">后端开发<span> &gt; </span></a></li>
+                    <li><a href="">APP开发<span> &gt; </span></a></li>
+                    <li><a href="">嵌入式<span> &gt; </span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="box center">
+        <div class="hd">
+            <h3>精品推荐</h3>
+            <a href="">查看全部</a>
+        </div>
+        <div class="bm">
+            <ul>
+                <script>
+                    let data = [
+                        {
+                            src: 'imgs/course01.png',
+                            img: 'imgs/hot.png',
+                            title: 'Think PHP 5.0 博客系统实战项目演练',
+                            num: 1125
+                        },
+                        {
+                            src: 'imgs/course02.png',
+                            img: 'imgs/hot.png',
+                            title: 'Android 网络动态图片加载实战',
+                            num: 357
+                        },
+                        {
+                            src: 'imgs/course03.png',
+                            img: 'imgs/hot.png',
+                            title: 'Angular2 大前端商城实战项目演练',
+                            num: 22250
+                        },
+                        {
+                            src: 'imgs/course04.png',
+                            img: 'imgs/hot.png',
+                            title: 'Android APP 实战项目演练',
+                            num: 389
+                        },
+                        {
+                            src: 'imgs/course05.png',
+                            img: 'imgs/hot.png',
+                            title: 'UGUI 源码深度分析案例',
+                            num: 124
+                        },
+                        {
+                            src: 'imgs/course06.png',
+                            img: 'imgs/hot.png',
+                            title: 'Kami2首页界面切换效果实战演练',
+                            num: 432
+                        },
+                        {
+                            src: 'imgs/course07.png',
+                            img: 'imgs/hot.png',
+                            title: 'UNITY 从入门到精通实战案例',
+                            num: 888
+                        },
+                        {
+                            src: 'imgs/course08.png',
+                            img: 'imgs/hot.png',
+                            title: 'Cocos 深度学习你不会错过的实战',
+                            num: 590
+                        },
+                    ]
+                    for (let i = 0; i < data.length; i++) {
+                        document.write(`
+                         <li>
+                                <img src=${data[i].src} title="${data[i].title}"> 
+                                <em> <img src=${data[i].img} > </em>                               
+                                <h4>${data[i].title}</h4>
+                                <div class="info">
+                                    <span>高级</span>·${data[i].num}人在学习
+                                </div>
+                         </li>
+                       `)
+                    }
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="center">
+            <div class="copyright">
+                <img src="./imgs/logo.png" alt="">
+                <p>学成在线致力于中国最好的教育,它与中国一流大学和机构合作提供在线课程<br><br>&copy2017年XTGC Inc保留所有权利。</p>
+                <a href="">下载APP</a>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt>关于学成网</dt>
+                    <dd><a href="">关于</a></dd>
+                    <dd><a href="">管理团队</a></dd>
+                    <dd><a href="">工作机会</a></dd>
+                    <dd><a href="">客户服务</a></dd>
+                    <dd><a href="">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于学成网</dt>
+                    <dd><a href="">关于</a></dd>
+                    <dd><a href="">管理团队</a></dd>
+                    <dd><a href="">工作机会</a></dd>
+                    <dd><a href="">客户服务</a></dd>
+                    <dd><a href="">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>关于学成网</dt>
+                    <dd><a href="">关于</a></dd>
+                    <dd><a href="">管理团队</a></dd>
+                    <dd><a href="">工作机会</a></dd>
+                    <dd><a href="">客户服务</a></dd>
+                    <dd><a href="">帮助</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
